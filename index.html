@@ -86,7 +86,7 @@
                 <figure>
                     <img src="assests/8.webp" alt="">
                     <figcaption>
-                        <a href="#">Bathroom</a>
+                        <a href="#">Bedroom</a>
                     </figcaption>
                 </figure>
             </div>
@@ -95,7 +95,7 @@
                 <figure>
                     <img src="assests/7.webp" alt="">
                     <figcaption>
-                        <a href="#">Bedroom</a>
+                        <a href="#">Bathroom</a>
                     </figcaption>
                 </figure>
             </div>
@@ -119,6 +119,33 @@
             </div>
         </div>
     </section>
+
+    <section id="contact" class="contact-section">
+        <div class="section-text">
+            <h2>Contact Us</h2>
+            <p>Need to get in touch with us?</p><br><p>Fill out the form and we'll</p><p>get back to you as soon as possible.</p>
+            
+        </div>
+            <div class="contact-info">
+                <div class="form-box">
+                    <form id="form" class="contact-form">
+                    <label for="name" class="form-entry">Name<br>
+                        <input name="name" id="name" type="text" class="txt-box" placeholder="&nbsp; &nbsp; Enter your name" required><br>
+                    </label>
+                    <label for="email" class="form-entry">Email<br>
+                        <input name="email" id="email" type="email" class="txt-box" placeholder="&nbsp; &nbsp; eg: abc11@gmail.com" required><br>
+                    </label>
+                    <label for="message" class="form-entry">Message<br>
+                        <textarea type="textarea" id="message" name="message" class="txt-box" placeholder="&nbsp; &nbsp; Additional Message" required></textarea><br>
+                    </label><br>
+                    <input type="submit" value="Submit" id="submit" class="btn1">
+                    
+                    </form>
+    </section>
+
+    <footer>
+        All Rights reserved || Copyright &copy; Interio || 2k22
+    </footer>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -155,7 +182,7 @@
     window.onload = function () {
         getUsername();
         if (currentUser == null) {
-            userlink.innerText = "Create New Account";
+            userlink.innerText = "Sign Up";
             userlink.classList.replace("nav-link", "btn");
             userlink.classList.add("btn-primary");
             userlink.classList.add("bg-transparent");
